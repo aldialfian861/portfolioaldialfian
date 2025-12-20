@@ -83,6 +83,21 @@ function showContact() {
     </p>
   </a>
 
+    <!-- TIKTOK -->
+  <a href="https://tiktok.com/@aldialfnn"
+     target="_blank"
+     class="bg-slate-800 p-6 rounded-xl text-center
+            hover:bg-slate-700 hover:-translate-y-1 transition">
+
+    <img src="icons/tiktok.png"
+         alt="TIKTOK"
+         class="w-10 h-10 mx-auto mb-3">
+
+    <p class="text-sm text-slate-400">TikTok</p>
+    <p class="text-sky-400 font-medium text-sm">
+      @aldialfnn
+    </p>
+  </a>
 </div>
 
 
@@ -305,7 +320,7 @@ if (trackWeb && prevWeb && nextWeb) {
 
   // AUTO SLIDE
   function startAuto() {
-    autoSlide = setInterval(nextSlide, 4000);
+    autoSlide = setInterval(nextSlide, 3000);
   }
 
   function stopAuto() {
