@@ -155,8 +155,7 @@
       </p>
 
       <p class="text-slate-400 text-sm">
-        2018 – 2022 <br>
-        IPK 3,67
+        2018 – 2022 • IPK 3,67
       </p>
     </div>
   </div>
@@ -256,23 +255,67 @@
     </div>
   </div>
 
-  <!-- PORTFOLIO 2 -->
-  <div class="card bg-slate-900 rounded-xl overflow-hidden shadow-lg 
-              hover:-translate-y-2 hover:shadow-sky-500/30 transition duration-300">
-    
-    <img src="portfolio-web.jpg"
-      alt="Website Portfolio"
-      class="w-full h-48 object-cover">
+  <!-- PORTFOLIO WEBSITE : SLIDER -->
+<div class="card bg-slate-900 rounded-xl overflow-hidden shadow-lg
+            hover:-translate-y-2 hover:shadow-sky-500/30 transition duration-300">
 
-    <div class="p-6 text-left">
-      <h3 class="text-xl font-semibold mb-2">
-        Website Portofolio Pribadi
-      </h3>
-      <p class="text-slate-400">
-        Website CV interaktif menggunakan HTML, Tailwind CSS, dan JavaScript.
-      </p>
+  <!-- SLIDER -->
+  <div class="relative overflow-hidden">
+    <div class="gallery-track-web flex transition-transform duration-700 ease-in-out">
+
+  
+      <img src="portfolio-website 2.png"
+           data-full="portfolio-website 2.png"
+           class="gallery-img w-full h-48 object-cover flex-shrink-0 cursor-pointer"
+           alt="Website 1">
+
+          <img src="website3.png"
+           data-full="website3.png"
+           class="gallery-img w-full h-48 object-cover flex-shrink-0 cursor-pointer"
+           alt="Website 2">
+
+          <img src="website3.png"
+           data-full="webs3.png"
+           class="gallery-img w-full h-48 object-cover flex-shrink-0 cursor-pointer"
+           alt="Website 3 ">
+
+            <img src="web4.png"
+           data-full="web4.png"
+           class="gallery-img w-full h-48 object-cover flex-shrink-0 cursor-pointer"
+           alt="Website 4">
+
+           <img src="portfolio-web.jpg"
+           data-full="portfolio-website.jpg"
+           class="gallery-img w-full h-48 object-cover flex-shrink-0 cursor-pointer"
+           alt="Website 5">
+
     </div>
+
+    <!-- BUTTON -->
+    <button class="prev-web absolute left-2 top-1/2 -translate-y-1/2
+                   bg-black/50 px-2 py-1 rounded text-white">
+      ‹
+    </button>
+
+    <button class="next-web absolute right-2 top-1/2 -translate-y-1/2
+                   bg-black/50 px-2 py-1 rounded text-white">
+      ›
+    </button>
   </div>
+
+  <!-- TEXT -->
+  <div class="p-6 text-left">
+    <h3 class="text-xl font-semibold mb-2">
+      Portfolio Website
+    </h3>
+    <p class="text-slate-400">
+      Koleksi website interaktif yang dikembangkan menggunakan Framework LrHTML, Tailwind CSS, dan JavaScript.
+      Desain modern, responsif, dan mobile-friendly.
+    </p>
+  </div>
+</div>
+
+  
 
   <!-- PORTFOLIO 3 : GALERI DESAIN -->
 <div class="card bg-slate-900 rounded-xl overflow-hidden shadow-lg 
@@ -402,5 +445,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-

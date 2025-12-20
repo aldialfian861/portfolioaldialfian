@@ -267,3 +267,35 @@ function closeLightbox() {
   lightbox.classList.remove("flex");
   lightboxImg.src = "";
 }
+
+// Slider Portfolio Website
+const trackWeb = document.querySelector('.gallery-track-web');
+const prevWeb = document.querySelector('.prev-web');
+const nextWeb = document.querySelector('.next-web');
+
+let indexWeb = 0;
+const maxIndexWeb = trackWeb.children.length - 1;
+
+// Fungsi untuk update posisi slider
+function updateSlider() {
+  trackWeb.style.transform = `translateX(-${indexWeb * 100}%)`;
+}
+
+// Tombol prev
+prevWeb.addEventListener('click', () => {
+  indexWeb = (indexWeb === 0) ? maxIndexWeb : indexWeb - 1;
+  updateSlider();
+});
+
+// Tombol next
+nextWeb.addEventListener('click', () => {
+  indexWeb = (indexWeb === maxIndexWeb) ? 0 : indexWeb + 1;
+  updateSlider();
+});
+
+// Auto-slide setiap 4 detik
+setInterval(() => {
+  indexWeb = (indexWeb === maxIndexWeb) ? 0 : indexWeb + 1;
+  updateSlider();
+}, 4000);
+
