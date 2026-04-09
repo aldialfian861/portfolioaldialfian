@@ -225,7 +225,7 @@ function initSlider(trackClass, prevClass, nextClass, interval = 4000) {
 initSlider(".gallery-track", ".prev", ".next", 3000);
 initSlider(".gallery-track-2", ".prev-2", ".next-2", 3000);
 
-/* ===== LIGHTBOX PORTFOLIO ===== */
+/* ===== LIGHTBOX PORTFOLIO WITH LIVE LINKS ===== */
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const lightboxClose = document.getElementById("lightboxClose");
@@ -233,6 +233,23 @@ const lightboxClose = document.getElementById("lightboxClose");
 document.querySelectorAll(".gallery-img").forEach(img => {
   img.addEventListener("click", () => {
     lightboxImg.src = img.dataset.full || img.src;
+    const link = img.dataset.link;
+    const currentLinkBtn = lightbox.querySelector('.lightbox-link');
+    if (link && !currentLinkBtn) {
+      // Create link button if not exists
+      const linkBtn = document.createElement('a');
+      linkBtn.href = link;
+      linkBtn.target = '_blank';
+      linkBtn.className = 'absolute bottom-8 left-1/2 -translate-x-1/2 px-8 py-3 bg-sky-500 hover:bg-sky-400 text-white font-bold rounded-full shadow-2xl transition-all hover:scale-105 z-20 text-sm';
+      linkBtn.textContent = 'Link Project';
+      lightbox.appendChild(linkBtn);
+    } else if (link) {
+      currentLinkBtn.href = link;
+      currentLinkBtn.style.display = 'block';
+    } else {
+      const btn = lightbox.querySelector('.lightbox-link');
+      if (btn) btn.style.display = 'none';
+    }
     lightbox.classList.remove("hidden");
     lightbox.classList.add("flex");
   });
@@ -249,6 +266,8 @@ document.addEventListener("keydown", e => {
 });
 
 function closeLightbox() {
+  const linkBtn = lightbox.querySelector('.lightbox-link');
+  if (linkBtn) linkBtn.style.display = 'none';
   lightbox.classList.add("hidden");
   lightbox.classList.remove("flex");
   lightboxImg.src = "";
@@ -333,4 +352,7 @@ if (trackWeb && prevWeb && nextWeb) {
   updateSlider();
   startAuto();
 }
+
+
+
 
