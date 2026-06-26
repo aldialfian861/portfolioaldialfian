@@ -421,6 +421,17 @@ img {
 }
 
 @media (max-width: 768px) {
+  /* prevent layout shifting / accidental oversized elements on mobile */
+  body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+  }
+
+  nav {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .nav-shell {
     width: calc(100vw - 1rem);
     border-radius: 999px;
