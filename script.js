@@ -27,17 +27,26 @@ function showContact() {
     <p class="text-green-400 font-medium text-xs md:text-sm">+62 856 3147 718</p>
     <div class="absolute bottom-0 left-0 w-0 h-1 bg-green-500 transition-all duration-500 group-hover:w-full"></div>
   </a>
-
-  <a href="https://instagram.com/aldialfnn" target="_blank"
-     class="group relative bg-slate-900/50 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] border border-white/5 text-center transition-all duration-500 hover:border-pink-500/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-pink-500/10 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-    <svg class="w-10 h-10 md:w-12 md:h-12 mx-auto mb-4 text-pink-400 group-hover:scale-110 transition-transform duration-500" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12.017 0C8.396 0 7.996.014 6.79.067 5.584.12 4.775.302 4.082.566c-.716.28-1.325.69-1.84 1.204C1.728 2.284 1.318 2.893.998 3.61c-.264.693-.446 1.502-.5 2.708C.448 7.524.434 7.924.434 11.545s.014 4.021.067 5.227c.054 1.206.236 2.015.5 2.708.322.717.732 1.326 1.246 1.84.515.514 1.124.924 1.84 1.204.693.264 1.502.446 2.708.5C7.996 23.552 8.396 23.566 12.017 23.566s4.021-.014 5.227-.067c1.206-.054 2.015-.236 2.708-.5.716-.28 1.325-.69 1.84-1.204.514-.515.924-1.124 1.204-1.84.264-.693.446-1.502.5-2.708.067-1.206.081-1.606.081-5.227s-.014-4.021-.067-5.227c-.054-1.206-.236-2.015-.5-2.708-.28-.716-.69-1.325-1.204-1.84-.515-.514-1.124-.924-1.84-1.204-.693-.264-1.502-.446-2.708-.5C16.038.014 15.638 0 12.017 0zm0 2.163c3.532 0 3.958.014 5.357.081 1.37.066 2.104.29 2.59.483.637.25 1.092.582 1.572.982.49.4.894.894 1.294 1.384.4.49.732.945.982 1.572.193.486.417 1.22.483 2.59.067 1.399.081 1.825.081 5.357s-.014 3.958-.081 5.357c-.066 1.37-.29 2.104-.483 2.59-.25.637-.582 1.092-.982 1.572-.4.49-.894.894-1.384 1.294-.49.4-.945.732-1.572.982-.486.193-1.22.417-2.59.483-1.399.067-1.825.081-5.357.081s-3.958-.014-5.357-.081c-1.37-.066-2.104-.29-2.59-.483-.637-.25-1.092-.582-1.572-.982-.49-.4-.894-.894-1.294-1.384-.4-.49-.732-.945-.982-1.572-.193-.486-.417-1.22-.483-2.59-.067-1.399-.081-1.825-.081-5.357s.014-3.958.081-5.357c.066-1.37.29-2.104.483-2.59.25-.637.582-1.092.982-1.572.4-.49.894-.894 1.384-1.294.49-.4.945-.732 1.572-.982.486-.193 1.22-.417 2.59-.483C8.059 2.177 8.485 2.163 12.017 2.163zm0 3.597a6.42 6.42 0 100 12.84 6.42 6.42 0 000-12.84zm0 10.583a4.163 4.163 0 110-8.326 4.163 4.163 0 010 8.326zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
-    </svg>
-    <p class="text-[10px] text-slate-500 uppercase tracking-widest mb-1 font-bold">Instagram</p>
-    <p class="text-pink-400 font-medium text-xs md:text-sm">@aldialfnn</p>
-    <div class="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-500 group-hover:w-full"></div>
-  </a>
+      <a href="https://instagram.com/aldialfnn" target="_blank"
+        class="group relative bg-slate-900/50 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] border border-white/5 text-center transition-all duration-500 hover:border-pink-500/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-pink-500/10 overflow-visible">
+        <div class="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        <svg class="relative z-10 w-10 h-10 md:w-12 md:h-12 mx-auto mb-4 text-pink-400 group-hover:scale-110 transition-transform duration-500"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1"></circle>
+        </svg>
+        <p class="relative z-10 text-[10px] text-slate-500 uppercase tracking-widest mb-1 font-bold">
+          Instagram
+        </p>
+        <p class="relative z-10 text-pink-400 font-medium text-xs md:text-sm">
+          @aldialfnn
+        </p>
+        <div class="absolute bottom-0 left-0 w-0 h-1 bg-pink-500 transition-all duration-500 group-hover:w-full"></div>
+      </a>
 
   <a href="https://www.linkedin.com/in/aldialfian" target="_blank"
      class="group relative bg-slate-900/50 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] border border-white/5 text-center transition-all duration-500 hover:border-blue-500/50 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 overflow-hidden">
@@ -352,6 +361,15 @@ if (trackWeb && prevWeb && nextWeb) {
   updateSlider();
   startAuto();
 }
+
+
+
+/* ===============================
+   PRELOADER (NEON) - Loading masuk keren
+================================ */
+
+
+
 
 
 
